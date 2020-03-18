@@ -1,0 +1,40 @@
+#cs771:hover{
+	background-color: blue;
+	transition: 0.6s
+}
+
+#cs633:hover{
+	background-color: red;
+	transition: 0.6s
+}
+
+#cs628:hover{
+	background-color: yellow;
+	transition: 0.6s
+}
+
+#cs675:hover{
+	background-color: blue;
+	transition: 0.6s
+}
+
+#cs641:hover{
+	background-color: green;
+	transition: 0.6s
+}
+
+#cs698:hover{
+	background-color: red;
+	transition: 0.6s
+}
+#desc{ 
+	display:none;
+	border:solid;
+	position:absolute;
+	LEFT:200px;
+	TOP:200px;
+	height:300px;
+	width:470px;
+	background-color: black;
+	opacity: 0.8;
+}
