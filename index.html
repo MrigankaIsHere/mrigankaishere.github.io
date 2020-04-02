@@ -1,130 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!--#include virtual="navbar.html" --> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
 </head>
-<body style="background-color:green">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="https://www.cse.iitk.ac.in/">Dept. Of CSE, IIT Kanpur</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarText">
-              <div class="mr-auto"></div>
-              <ul class="navbar-nav mr-auto">
+<header>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://www.cse.iitk.ac.in/">Dept. Of CSE, IIT Kanpur</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav mr-auto">
+            <div class="Slide">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About Me</a>
+            </div>  
+            
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Me</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="education.html">My Education</a>
+            </div> 
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="education.html">My Education</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="subjects.html">Subjects Studied</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="location.php">Where am I?<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-              <span class="navbar-text">
-                <a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists" style="color:orange">Jai Hind.</a><a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists"> Vande</a> <a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists" style="color:green">Mataram</a>.
-              </span>
             </div>
-          </nav>
-    </header>  
-    <div class="container">
-      <div class="row" style="margin-right:5px">
-        <div class="col-md-12 text-center" style="max-width:2000px;">
-          <a><br><br><br></a>
-          <h4 style="color:rgb(21, 21, 94);">Introducing my friends:<br></h4>
-          <a>    </a>
-          <a style="color:black" href="https://www.cse.iitk.ac.in/users/kuldeeps/" target="_blank">Kuldeep Solanki  </a>
-          <a style="color:black" href="https://www.cse.iitk.ac.in/users/jaydeepm/" target="_blank">Jaydeepsigh Meda  </a>
-          <a style="color:black" href="#">Me :P  </a>
-          <a style="color:black">Abbas Haider(employee at POSOCO)</a>
-          <a style="color:black" href="https://www.cse.iitk.ac.in/users/samvid/" target="_blank">Samvid Mistry  </a>
-          <a style="color:black" href="https://www.cse.iitk.ac.in/users/stushar/" target="_blank">Tushar Shandilya  </a>
-          <a style="color:black" href="https://www.cse.iitk.ac.in/users/deepeshc/" target="_blank">Deepesh Chaudhuri  </a>
-          <a style="color:black" href="https://www.cse.iitk.ac.in/users/fahad/" target="_blank">Fahad Sheikh  </a>
-          <a style="color:black" href="https://www.cse.iitk.ac.in/users/sharad/" target="_blank">Sharad Shukla  </a>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="subjects.html">Subjects Studied</a>
+                </li>
+            </div>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="loaction.php">Where Am I?</a>
+                </li>
+            </div>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Info</a>
+                </li>
+            </div>  
+          </ul>
+          <span class="navbar-text">
+            <a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists" style="color:orange">Jai Hind.</a><a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists"> Vande</a> <a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists" style="color:green">Mataram</a>.
+          </span>
         </div>
-      </div>
-
-      <div class="container">
-        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner shadow-lg p-3 mb-5 bg-white rounded">
-            <div class="carousel-item active" data-interval="1500">
-              <img src="assets//gang1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-interval="1500">
-              <img src="assets//gang2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-interval="1500">
-              <img src="assets//gang3.jpg" class="d-block w-100" alt="...">
-            </div>
+    </nav>
+</header>
+<body onload="colourizer()" class="Body" >
+    <div class="container" id="variable" >
+        <div class="row" style="margin-right:5px">
+          <div class="col-md-12 text-center" style="max-width:2000px;">
+            <a><br> </a>
+            <h4 style="color:rgb(155, 155, 243);">Introducing my friends:<br></h4>
+            <a style="color:rgb(128, 127, 127);" href="https://www.cse.iitk.ac.in/users/kuldeeps/" target="_blank"><strong>Kuldeep Solanki</strong></a>
+            <a style="color:rgb(128, 127, 127);" href="https://www.cse.iitk.ac.in/users/jaydeepm/" target="_blank"><strong>Jaydeepsigh Meda</strong></a>
+            <a style="color:rgb(128, 127, 127);" href="#">Me :P  </a>
+            <a style="color:rgb(128, 127, 127);"><strong>Abbas Haider(employee at POSOCO)</strong></a>
+            <a style="color:rgb(128, 127, 127);" href="https://www.cse.iitk.ac.in/users/samvid/" target="_blank"><strong>Samvid Mistry</strong></a>
+            <a style="color:rgb(128, 127, 127);" href="https://www.cse.iitk.ac.in/users/stushar/" target="_blank"><strong>Tushar Shandilya</strong></a>
+            <a style="color:rgb(128, 127, 127);" href="https://www.cse.iitk.ac.in/users/deepeshc/" target="_blank"><strong>Deepesh Chaudhuri</strong></a>
+            <a style="color:rgb(128, 127, 127);" href="https://www.cse.iitk.ac.in/users/fahad/" target="_blank"><strong>Fahad Sheikh</strong></a>
+            <a style="color:rgb(128, 127, 127);" href="https://www.cse.iitk.ac.in/users/sharad/" target="_blank"><strong>Sharad Shukla</strong></a>
           </div>
-         
-          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-      </div>
-
-
-      
-
-    
-
-
-
-
-
-      <!-- <div class="row">
-        <div class="col-md-12 text-center">
         <br>
-        <img src="assets//gang1.jpg" width="60%">
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <br>
-          <img src="assets//gang2.jpg" width="50%">
+        <div class="container">
+          <div id="carouselExampleInterval" class="carousel slide selected" data-ride="carousel" width="30%">
+            <div class="carousel-inner shadow-lg p-3 mb-5 bg-white rounded">
+              <div class="carousel-item active" data-interval="1500">
+                <img src="assets//gang1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="1500">
+                <img src="assets//gang2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="1500">
+                <img src="assets//gang3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+           
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <br>
-          <img src="assets//gang3.jpg" width="60%">        
-          <br><br>
-        </div>
-      </div>
-    </div> -->
-  
-    </div>   
-    <div class="container" style="background-color: green;">
-      <div class="row">
-        <div class="col-md-12 text-center" style="max-width:2000px">
-          <p style="color:white"><strong>Enough I guess? Now lets Introduce myself.</strong></p> <a style= "color:black" href="about.html"><strong>About Mriganka</strong></a>
-          <br><br>
-        </div>
-      </div> 
+      </div>   
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" style="max-width:2000px">
+                <p style="color:white"><strong>Enough I guess? Now lets Introduce myself.</strong></p> <a style= "color:rgb(255, 255, 255)" href="about.html"><strong>About Mriganka</strong></a>
+                <br><br>
+            </div>
+        </div> 
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        function colourizer(){
+            if (screen.width<700){
+                document.getElementById("variable").style.backgroundColor= "white";
+                document.getElementById("variable").style.paddingBottom= "30px";
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

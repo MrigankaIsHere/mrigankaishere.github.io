@@ -11,7 +11,7 @@
 
 </head>
 
-<body style="background-color: green;">
+<body class="Body" style="background-color: green;">
 
   <header>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -19,40 +19,52 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarText">
           <div class="mr-auto"></div>
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">My Education</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Subjects Studied <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="location.php">Where am I?<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </div>  
+            
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+            </div> 
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="education.html">My Education</a>
+                </li>
+            </div>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="subjects.html">Subjects Studied</a>
+                </li>
+            </div>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="location.php">Where Am I?</a>
+                </li>
+            </div>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Info</a>
+                </li>
+            </div>  
           </ul>
           <span class="navbar-text">
             <a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists" style="color:orange">Jai Hind.</a><a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists"> Vande</a> <a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists" style="color:green">Mataram</a>.
           </span>
         </div>
-      </nav>
+    </nav>
   </header>
-    <div class="container" style="background-color: green;">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div" class="col-md-12 text-center">
             <br><br>
-            <h1 style="color:rgb(21, 21, 94);s">SUBJECTS THAT I HAVE STUDIED IN M.Tech</h1>
+            <h1 class="Text" style="color:rgb(21, 21, 94); letter-spacing: 1px;">SUBJECTS STUDIED IN M.Tech</h1>
         </div>
     </div>
     </div>
@@ -60,38 +72,42 @@
       <div class="row">
         <div class="col-md-12 text-center">
             <div id="subj" style="color:rgb(66, 16, 148);">
-                <div id="cs771" class="info" style="TOP:90px;">
-                    <h3 onclick="displayML()" onmouseover="displayML()" onmouseout="resetML()"><a href="#" style="color:black">INTRODUCTION TO MACHINE LEARNING</a></h3>
-                    <div id="descML" style="display:none;">some description about this</div>
+                <div style="TOP:90px;">
+                    <h3 ><a style="color:black">INTRODUCTION TO MACHINE LEARNING</a></h3>
+                    <div style="background-color: blue; color:white;" class="target"><strong><p style="margin:20px; font-family: Courier;">In this introductory course to machine learning, I learnt a few basic machine learning algorithms alongwith the mathematics that comes entangled with it. The course involved working with assignments in a group. We as a group worked our assignments in Python 3. The most notable work here was to build a deCAPTCHA for a fairly simple CAPTCHA scheme.</p><p style="margin:20px; font-family: Courier;">I completed this course with a Performance Index of 8 out of 10.</p></div>
                 </div>
-                <div id="cs633" class="info" style="TOP:130px;">
-                    <h3 onclick="displayPC()" onmouseover="displayPC()" onmouseout="resetPC()"><a href="#" style="color:black">PARALLEL COMPUTING</a></h3>
-                    <div id="descPC" style="display:none;">some description about this</div>
+                <br>
+                <div style="TOP:130px;">
+                    <h3><a style="color:black">PARALLEL COMPUTING</a></h3>
+                    <div style="background-color: red; color:white;" class="target"><p style="margin:20px; font-family: Courier;">In this course, I learnt about efficient communication algorithms that sustain a large parallel network. The most notable work in this course was to write a parallel code to identify the  number of clusters in a huge real life data set of N body simulation. I also studied the high level architecture of the IBM BlueGene and IIT Kanpurs HPC2013 supercomputer. The course involved assignments that had to be done individually. Assignments had to be done in C language with extensive support from the MPICH library.</p><p style="margin:20px; font-family: Courier;">I completed this course with a Performance Index of 8 out of 10.</p></div>
                 </div>
-                <div id="cs628" class="info" style="TOP:170px;">
-                    <h3 onclick="displaySS()" onmouseover="displaySS()" onmouseout="resetSS()"><a href="#" style="color:black">SYSTEM SECURITY</a></h3>
-                    <div id="descSS" style="display:none;">some description about this</div>
+                <br>
+                <div style="TOP:170px;">
+                    <h3><a style="color:black">SYSTEM SECURITY</a></h3>
+                    <div style="background-color: rgb(202, 202, 17);color:white;" class="target"><p style="margin:20px; font-family: Courier;">In this course I learnt about various attacks on a system, and there defenses. I surfaced web-security, network security as well. I also learnt about privilage escalations, and how we can minimize its effects by running code in isolation. This course involved a CTF challenge, where in we had to analyse the binary of a file, and break it to read secret hashes stored in a protected file. The most notable work in this course was to design a DropBox like application to store files securely, which was written in Golang.<br><br> I completed the course with a performance index of 10 out of 10.</p></div>
                 </div>
-                <div id="cs675" class="info" style="TOP:210px;">
-                    <h3 onclick="displayVSS()" onmouseover="displayVSS()" onmouseout="resetVSS()"><a href="#" style="color:black">VERIFIABLY SECURE SYSTEMS</a></h3>
-                    <div id="descVSS" style="display:none;">some description about this</div>
+                <br>
+                <div style="TOP:210px;">
+                    <h3><a style="color:black">VERIFIABLY SECURE SYSTEMS</a></h3>
+                    <div style="background-color: blue;color:white;" class="target">Currently studying this semester</div>
                 </div>
-                <div id="cs641" class="info" style="TOP:250px;">
-                    <h3 onclick="displayMC()" onmouseover="displayMC()" onmouseout="resetMC()"><a href="#" style="color:black">MODERN CRYPTOGRAPHY</a></h3>
-                    <div id="descMC" style="display:none;">some description about this</div>
+                <br>
+                <div style="TOP:250px;">
+                    <h3><a style="color:black">MODERN CRYPTOGRAPHY</a></h3>
+                    <div style="background-color: rgb(4, 95, 4);color:white;" class="target">Currently studying this semester</div>
                 </div>
-                <div id="cs698" class="info" style="TOP:290px;">
-                     <h3 onclick="displayMA()" onmouseover="displayMA()" onmouseout="resetMA()"><a href="#" style="color:black">MALWARE ANALYSIS AND INTRUSION DETECTION</a></h3>
-                     <div id="descMA" style="display:none;">some description about this</div>
+                <br>
+                <div style="TOP:290px;">
+                     <h3><a style="color:black">MALWARE ANALYSIS AND INTRUSION DETECTION</a></h3>
+                     <div style="background-color: red;color:white;" class="target">Currently studying this semester</div>
                 </div>
+
+                <br>
+                <br>
             </div>
         </div>
     </div>
     </div>
-    
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
