@@ -34,7 +34,7 @@
       $Not="absent";
       if(strcmp(chop(fgets($handle)),$Not)==0)
       {
-        $output="Mriganka is Not in Kanpur.";
+        $output="Not in Kanpur due to ".chop(fgets($handle));
       } 
       else{
         $a=chop(fgets($handle));
@@ -72,45 +72,56 @@
     <link rel="stylesheet" href="css/stylesubjects.css">
 </head>
 
-<body style="background-color: rgb(62, 146, 62);">
-  
-
-  <header>
+<header>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="https://www.cse.iitk.ac.in/">Dept. Of CSE, IIT Kanpur</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarText">
           <div class="mr-auto"></div>
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">My Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="subjects.html">Subjects Studied</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Where am I?<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-            </li>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </div>  
+            
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+            </div> 
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="education.html">My Education</a>
+                </li>
+            </div>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="subjects.html">Subjects Studied</a>
+                </li>
+            </div>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="location.php">Where Am I?</a>
+                </li>
+            </div>
+            <div class="Slide">
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Info</a>
+                </li>
+            </div>  
           </ul>
           <span class="navbar-text">
             <a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists" style="color:orange">Jai Hind.</a><a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists"> Vande</a> <a href= "https://en.wikipedia.org/wiki/List_of_Indian_independence_activists" style="color:green">Mataram</a>.
           </span>
         </div>
-      </nav>
+    </nav>
   </header>
-  <div class="container" style="background-color: rgb(230, 187, 130);">
+<body class= "Body" style="background-color: rgb(62, 146, 62);">
+
+  <div class="container" style="background-color: rgba(230, 187, 130,0.2);">
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-3 text-center">
@@ -146,7 +157,7 @@
         
           <?php
           if (isset($_POST['subTime'])) { 
-            echo "<br><br><br><br><br><br><h2>MRIGANKA IS</h2>";
+            echo "<br><br><br><br><br><br><h2 style=\"color:white;\">MRIGANKA IS</h2>";
             echo "<div class=\"container\">";
             if(chop($output)==""){
             echo "<h3>a free soul. Call him to know where he is. :P</h3>";
@@ -154,7 +165,9 @@
             else
             {
               echo "<h3>";
+              echo "<div class=\"container\" style=\"color: white;background-color:rgba(60, 130, 196, 0.2);\">";
               echo $output;
+              echo "</div>";
               echo "</h3>";
             }
             echo "</div>";

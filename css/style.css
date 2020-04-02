@@ -1,61 +1,96 @@
 
-
-.info{
-    transition: width 2s ease;  
+@media only screen and (min-width: 900px) {
+    .Body{
+        background-image: url("../back.jpg");
+        /* height: 100%; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+} 
+@media only screen and (max-width: 900px) {
+    .Body {
+        background-color: seagreen;
+    }
 }
 
-* {
-    box-sizing: border-box;
+.Slide{
+    /* width: 100%; */
+    transition: 500ms;
+}
+
+.Slide:hover{
+    /* width:102%; */
+    letter-spacing: 4px;
+    background-color: rgb(255, 115, 0);
+}
+
+.Text{
+  font: size 60px;
+  font-weight:700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  position: relative;
+  animation: text 2s;
+  animation-iteration-count: 1;
+}
+@keyframes text{
+  0%{
+    color:rgb(0, 0, 102);
+    letter-spacing: 1px;
   }
+  50%{
+    color:rgb(155, 155, 243);
+    letter-spacing: 4px;
+  }
+  100%{
+    color:rgb(0, 0, 102);
+    letter-spacing: 2px;
+  } 
+}
+
+.selected{
+  opacity:80%;
+}
+.selected:hover {
+  opacity:100%;
+}
+
+.target{
+  opacity:60%;
+  animation-name:blink;
+  animation-iteration-count: infinite;
+  animation-duration: 2000ms;
   
-  /* Style inputs */
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+}
+
+@keyframes blink{
+  0%{
+    opacity:60%;
   }
-  
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
+  50%{
+    opacity:90%;
   }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
+  100%{
+    opacity:60%;
   }
-  
-  /* Style the container/contact section */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
+}
+
+.knockknock{
+  animation-name:knocked;
+  animation-duration: 400ms;
+  animation-iteration-count: infinite;
+}
+@keyframes knocked{
+  0%{
+    transform: rotate(-5deg);
   }
-  
-  /* Create two columns that float next to eachother */
-  .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
+  33%{
+    transform: rotate(0deg);
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  66%{
+    transform: rotate(5deg);
   }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
+  100%{
+    transform: rotate(0deg);
   }
+}
