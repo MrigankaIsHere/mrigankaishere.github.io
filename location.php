@@ -69,6 +69,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="myscripts.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="css/stylesubjects.css">
 </head>
 
@@ -99,8 +100,13 @@
             </div>
             <div class="Slide">
                 <li class="nav-item active">
-                    <a class="nav-link" href="subjects.html">Subjects Studied</a>
+                    <a class="nav-link" href="subjects.html">My Subjects</a>
                 </li>
+            </div>
+            <div class="Slide">
+              <li class="nav-item active">
+                  <a class="nav-link" href="research.html">My Research</a>
+              </li>
             </div>
             <div class="Slide">
                 <li class="nav-item active">
@@ -187,19 +193,22 @@
               <input type="text" name="user" class="form-control" required/>
             </div>
             <div class="form-group">
+               <br>
               <label>Password:</label>
               <input type="password" name="pass" class="form-control" required/>
             </div>
             <button type="submit" class="btn btn-primary">Verify</button>
+          
           </form>
         </div>
       </div>
       <div class="col-md-1"></div>
-
+      
 
 
 
     </div>
+    <br><br>
     </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
